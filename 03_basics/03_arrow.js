@@ -27,7 +27,7 @@ const user = {
 // }
 
 
-//✅ 2. Function Expression
+//✅ 2. Function Expression/ anonymous funct
 
 // const chai = function(){
 //     let name = "Pankaj"
