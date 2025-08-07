@@ -10,15 +10,16 @@
     
 </body>
 <script>
-    const div = document.createElement('div')
-    console.log(div);
-    div.className = "main"
-    div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "generated title")
-    div.style.backgroundColor = "green"
-    div.style.padding = "12px"
-    // div.innerText = "Chai aur code"
-    const addText = document.createTextNode("Chai aur code")
+   const div = document.createElement('div')
+   console.log(div);
+   div.className = "main"
+   div.id = Math.round(Math.random() * 10 + 1)
+   div.setAttribute("title", "generted title")
+   div.style.backgroundColor = "blue"
+
+   div.style.padding = "20px"
+//    div.innerHTML = "JavaScript is a very simple language."
+   const addText = document.createTextNode("JavaScript is a very simple language.")
     div.appendChild(addText)
 
     document.body.appendChild(div)
