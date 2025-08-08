@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator</title>
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+}
+
+#bmi-value {
+  font-weight: bold;
+  color: #000;
+}
+
+#weight-guide {
+  margin-top: 20px;
+}
+
+#weight-guide h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#weight-guide ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#weight-guide li {
+  margin-bottom: 5px;
+  text-align: center;
+}
+.highlight {
+  color: green;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+</style>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+     <form id="bmi-form">
+      <div class="input-group">
+        <label for="height">Height (cm):</label>
+        <input type="text" id="height" placeholder="Enter your height in cm">
+      </div>
+      <div class="input-group">
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" placeholder="Enter your weight in kg">
+      </div>
+      <button type="submit">Calculate BMI</button>
+    </form>
+
+    <div id="results">Result: <span id="bmi-value">--</span></div>
+
+    <div id="weight-guide">
+      <h3>BMI Weight Guide</h3>
+   <ul>
+  <li id="underweight">Underweight: Less than 18.6</li>
+  <li id="normal">Normal Range: 18.6 - 24.9</li>
+  <li id="overweight">Overweight: Greater than 24.9</li>
+</ul>
+
+  </div>
+
+  <script src="bmiCalculator.js"></script>
+</body>
+</html>
