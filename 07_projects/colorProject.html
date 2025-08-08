@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BackgroundColor Project</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s;
+    }
+
+    .colour-picker {
+      margin-top: 100px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .button {
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+      margin: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid black;
+    }
+
+    #grey {
+      background-color: grey;
+    }
+
+    #red {
+      background-color: red;
+    }
+
+    #yellow {
+      background-color: yellow;
+    }
+
+    #blue {
+      background-color: blue;
+    }
+
+    #green {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="colour-picker">
+    <h1>Color Scheme Switcher</h1>
+    <span class="button" id="grey"></span>
+    <span class="button" id="red"></span>
+    <span class="button" id="yellow"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id="green"></span>
+  </div>
+
+  <script src="colorProject.js">
+  </script>
+</body>
+</html>
