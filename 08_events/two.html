@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set TimeOut</title>
+</head>
+<body>
+    <h1>Topice Is Set Time Out</h1>
+    <button id="Stop">STOP</button>
+</body>
+  <script>
+    const sayhello = function(){
+        console.log("Hello Pankaj");
+    } 
+
+    const changeTopice = function(){
+        document.querySelector('h1').innerHTML = 'This is Js Topice Set TimeOut'
+    }
+    setTimeout(changeTopice, 3000)
+
+    document.querySelector('#Stop').addEventListener('click', function(){
+        clearTimeout(changeTopice)
+        console.log("Stooping");
+    })
+  </script>
+</html>
