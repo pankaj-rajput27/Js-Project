@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Board Check</title>
+<style>
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: white; 
+    }
+
+    .insert .key {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px 40px;
+      border: 2px solid #00f7ff;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 15px #00f7ff;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #00f7ff; }
+      to   { box-shadow: 0 0 25px #00f7ff; }
+    }
+
+    table {
+      border-collapse: collapse;
+      margin-top: 30px;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      width: 100%;
+      max-width: 500px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+    }
+
+    th, td {
+      padding: 15px 20px;
+    }
+
+    th {
+      background: rgba(0, 255, 255, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    td {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    tr:hover td {
+      background: rgba(0, 255, 255, 0.1);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+<div id="insert">
+  <div class="key">Press the Key and watch magic</div>
+</div>
+
+
+</body>
+<script src="keyBoardCheck.js"></script>
+</html>
